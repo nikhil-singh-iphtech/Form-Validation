@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
 }
 
-/* Left Image Side */
+
 .image-side {
   flex: 1;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
@@ -30,24 +30,24 @@ body {
   padding: 40px;
 }
 
-.overlay-text {
+.text {
   color: #fff;
   text-align: center;
 }
 
-.overlay-text h1 {
+.ext h1 {
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
 
-.overlay-text p {
+.text p {
   font-size: 18px;
   opacity: 0.9;
 }
 
-/* Right Form Side */
+
 .form-side {
   flex: 1;
   display: flex;
@@ -144,7 +144,7 @@ button:hover {
   opacity: 0.9;
 }
 
-/* Responsive */
+
 @media (max-width: 900px) {
   .main-container {
     flex-direction: column;
@@ -154,7 +154,7 @@ button:hover {
     height: 300px;
   }
 
-  .overlay-text h1 {
+  .text h1 {
     font-size: 32px;
   }
 
