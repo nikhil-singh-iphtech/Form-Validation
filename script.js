@@ -45,7 +45,7 @@ document.getElementById("userForm").addEventListener("submit", function(e) {
   }
 
 
-  if (age === "" || age < 1 || age > 120) {
+  if (age === "" || age < 1 ) {
     document.getElementById("ageError").textContent = "Enter valid age";
     isValid = false;
   }
@@ -75,7 +75,7 @@ document.getElementById("userForm").addEventListener("submit", function(e) {
     };
 
     console.log("User Data:", userData);
-    alert("Form submitted successfully! Check console.");
+    alert("Form submitted successfully! User data is in console.");
     document.getElementById("userForm").reset();
   }
 
