@@ -63,7 +63,7 @@ document.getElementById("userForm").addEventListener("submit", function(e) {
   }
 
   if (isValid) {
-    let userData = {
+    const userData = {
       firstname,
       middlename,
       lastname,
