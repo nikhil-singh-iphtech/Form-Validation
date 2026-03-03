@@ -17,7 +17,6 @@ body {
   min-height: 100vh;
 }
 
-
 .image-side {
   flex: 1;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
@@ -36,7 +35,7 @@ body {
   margin-bottom: 500px;
 }
 
-.ext h1 {
+.text h1 {
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 15px;
@@ -47,7 +46,6 @@ body {
   font-size: 18px;
   opacity: 0.9;
 }
-
 
 .form-side {
   flex: 1;
@@ -80,6 +78,7 @@ body {
 
 .form-group {
   margin-bottom: 18px;
+  width: 100%;
 }
 
 label {
@@ -90,7 +89,8 @@ label {
 }
 
 input,
-textarea {
+textarea,
+select {
   width: 100%;
   padding: 12px;
   border-radius: 10px;
@@ -102,7 +102,8 @@ textarea {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   border-color: #38bdf8;
   background: rgba(255,255,255,0.1);
 }
@@ -146,6 +147,15 @@ button:hover {
 }
 
 
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row .form-group {
+  flex: 1;
+}
+
 @media (max-width: 900px) {
   .main-container {
     flex-direction: column;
@@ -161,5 +171,9 @@ button:hover {
 
   .form-container {
     padding: 30px;
+  }
+
+  .row {
+    flex-direction: column;
   }
 }

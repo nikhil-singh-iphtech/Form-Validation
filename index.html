@@ -21,56 +21,80 @@
 
   <div class="form-side">
     <div class="form-container">
-      <h2>Enter Your Details</h2>
+      <h2>Student Registration </h2>
 
       <form id="userForm">
 
-        <div class="form-group">
-          <label>First Name</label>
-          <input type="text" id="firstname">
-          <div class="error" id="firstnameError"></div>
+    
+        <div class="row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" id="firstname">
+            <div class="error" id="firstnameError"></div>
+          </div>
+
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" id="lastname">
+            <div class="error" id="lastnameError"></div>
+          </div>
         </div>
 
+  
         <div class="form-group">
-          <label>Middle Name</label>
-          <input type="text" id="middlename">
-          <div class="error" id="middlenameError"></div>
+          <label>Class</label>
+          <select id="class">
+            <option value="">Select Class</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+          <div class="error" id="classError"></div>
         </div>
 
-        <div class="form-group">
-          <label>Last Name</label>
-          <input type="text" id="lastname">
-          <div class="error" id="lastnameError"></div>
-        </div>
-
+     
         <div class="form-group">
           <label>Email</label>
           <input type="text" id="email">
           <div class="error" id="emailError"></div>
         </div>
 
+        
         <div class="form-group">
-          <label>Contact Number</label>
+          <label>Phone Number</label>
           <input type="text" id="contact">
           <div class="error" id="contactError"></div>
         </div>
 
-        <div class="form-group">
-          <label>Age</label>
-          <input type="number" id="age">
-          <div class="error" id="ageError"></div>
-        </div>
-
-        <div class="form-group">
-          <label>Gender</label>
-          <div class="gender-group">
-            <label><input type="radio" name="gender" value="Male"> Male</label>
-            <label><input type="radio" name="gender" value="Female"> Female</label>
-            <label><input type="radio" name="gender" value="Other"> Other</label>
+       
+        <div class="row">
+          <div class="form-group">
+            <label>Date of Birth (DOB)</label>
+            <input type="date" id="dob">
+            <div class="error" id="dobError"></div>
           </div>
-          <div class="error" id="genderError"></div>
+
+          <div class="form-group">
+            <label>Gender</label>
+            <div class="gender-group">
+              <label><input type="radio" name="gender" value="Male"> Male</label>
+              <label><input type="radio" name="gender" value="Female"> Female</label>
+              <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+            <div class="error" id="genderError"></div>
+          </div>
         </div>
 
+       
         <div class="form-group">
           <label>Description</label>
           <textarea id="description"></textarea>
